@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    /* room card */
+    .stacked {
+        @apply grid;
+    }
+
+    .stacked > * {
+        @apply col-start-1 col-end-2 row-start-1 row-end-2;
+    }
+}
+
+.active {
+    background-color: #fceede;
+    display: block;
+}
+
+.card-content-shadow {
+    box-shadow: 0 0.25rem 1rem rgb(0 0 0 / 0.1);
+}
